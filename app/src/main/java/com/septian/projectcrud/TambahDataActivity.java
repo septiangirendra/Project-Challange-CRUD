@@ -1,6 +1,7 @@
 package com.septian.projectcrud;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
@@ -25,6 +26,7 @@ public class TambahDataActivity extends AppCompatActivity implements AdapterView
 
     private Button buttonAdd;
     private Button buttonView;
+    ActionBar setting_actionbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,9 @@ public class TambahDataActivity extends AppCompatActivity implements AdapterView
 
         buttonAdd =  findViewById(R.id.buttonAdd);
         buttonView = findViewById(R.id.buttonView);
+
+        setting_actionbar = getSupportActionBar();
+        setting_actionbar.setTitle("TAMBAH PEGAWAI");
 
         //Setting listeners to button
         buttonAdd.setOnClickListener(this);

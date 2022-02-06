@@ -35,7 +35,7 @@ public class LihatDataActivity extends AppCompatActivity implements AdapterView.
         setContentView(R.layout.activity_lihat_data);
 
         setting_actionbar = getSupportActionBar();
-        setting_actionbar.setTitle("My CRUD");
+        setting_actionbar.setTitle("DATA PEGAWAI");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
